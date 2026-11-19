@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOBILIAIRE 임원 AI 워크숍 — 검토자료 | 좋은기분</title>
+<meta name="description" content="임원 6인이 3일 뒤 각자 자기 업무 도구 한 개를 들고 나가는 워크숍. 완성된 화면과 품의용 1장을 먼저 보십시오.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="NOBILIAIRE 임원 AI 워크숍 — 검토자료">
+<meta property="og:description" content="교육이 아니라 산출물입니다. 완성된 화면을 먼저 보십시오.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14264A; --navy2:#1E3665; --navy3:#0D1A36;
+  --gold:#F3B94D; --gold2:#BE7B12;
+  --bg:#FBFBF9; --card:#fff; --line:#E6E8EE;
+  --ink:#14264A; --ink2:#49536A; --ink3:#7B8396;
+  --good:#1F7A4D; --warn:#B8791A;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);
+  line-height:1.75;word-break:keep-all;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+
+/* ───── top bar ───── */
+.top{background:var(--navy);padding:14px 0;border-bottom:1px solid rgba(243,185,77,.25)}
+.topin{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logos{display:flex;align-items:center;gap:14px}
+.logos img.wm{height:40px;width:auto;display:block}
+.sep{width:1px;height:26px;background:rgba(255,255,255,.22)}
+.fsg{display:flex;align-items:center;gap:7px}
+.fsg img{width:26px;height:26px;display:block}
+.fsg span{font-size:12.5px;color:#C3CEE4;font-weight:500;letter-spacing:-.2px}
+.tag{font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--gold);
+  border:1px solid rgba(243,185,77,.4);background:rgba(243,185,77,.1);padding:5px 10px;border-radius:999px;white-space:nowrap}
+
+/* ───── hero ───── */
+.hero{background:linear-gradient(170deg,var(--navy) 0%,var(--navy3) 100%);color:#fff;padding:46px 0 42px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(243,185,77,.14),transparent 68%)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{font-size:11.5px;letter-spacing:2.4px;color:var(--gold);font-weight:700;margin-bottom:14px}
+h1{font-size:30px;line-height:1.45;font-weight:700;letter-spacing:-.8px;margin-bottom:16px}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:15.5px;color:#C7D2E6;max-width:660px;font-weight:300;line-height:1.85}
+.lead b{color:#fff;font-weight:500}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:10px;font-size:14.5px;
+  font-weight:700;text-decoration:none;transition:.15s;letter-spacing:-.3px}
+.btn-p{background:var(--gold);color:var(--navy3)}
+.btn-p:hover{background:#FFC860;transform:translateY(-1px)}
+.btn-s{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.btn-s:hover{background:rgba(255,255,255,.15)}
+
+/* ───── sections ───── */
+main{padding:0 0 60px}
+section{padding:44px 0 0}
+.shd{display:flex;align-items:baseline;gap:11px;margin-bottom:6px}
+.snum{font-family:'Noto Serif KR',serif;font-size:13px;color:var(--gold2);font-weight:500;letter-spacing:1px}
+h2{font-size:21px;font-weight:700;letter-spacing:-.6px;line-height:1.4}
+.sdesc{font-size:14.5px;color:var(--ink2);margin:8px 0 20px;max-width:720px}
+
+/* decision table */
+.dt{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.dt tr+tr{border-top:1px solid var(--line)}
+.dt th{text-align:left;padding:15px 18px;width:122px;font-size:13px;font-weight:700;color:var(--ink3);
+  background:#F6F7F9;vertical-align:top;letter-spacing:-.2px;white-space:nowrap}
+.dt td{padding:15px 18px;font-size:14.5px;vertical-align:top}
+.dt td b{color:var(--navy);font-weight:700}
+.dt td .hl{background:linear-gradient(transparent 62%,rgba(243,185,77,.45) 62%);font-weight:700}
+
+/* demo cards */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.dcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;
+  text-decoration:none;display:block;transition:.16s}
+.dcard:hover{border-color:var(--gold);box-shadow:0 10px 26px rgba(20,38,74,.09);transform:translateY(-2px)}
+.dcard .k{font-size:11px;font-weight:700;letter-spacing:.8px;color:var(--gold2);margin-bottom:8px}
+.dcard h3{font-size:16.5px;font-weight:700;letter-spacing:-.4px;margin-bottom:7px}
+.dcard p{font-size:13.5px;color:var(--ink2);line-height:1.7}
+.dcard .go{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--navy2)}
+.punch{margin-top:16px;padding:16px 18px;background:#FFFBF1;border:1px solid #F0DFB4;border-radius:12px;
+  font-size:14px;color:#6E5212;line-height:1.8}
+.punch b{color:#4A3607}
+.note{font-size:12.5px;color:var(--ink3);margin-top:10px}
+
+/* days */
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.day{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative}
+.day::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;background:var(--gold);border-radius:0 3px 3px 0}
+.day .d{font-size:11.5px;font-weight:700;letter-spacing:1.2px;color:var(--gold2);margin-bottom:8px}
+.day h4{font-size:15.5px;font-weight:700;margin-bottom:9px;letter-spacing:-.3px;line-height:1.5}
+.day p{font-size:13.5px;color:var(--ink2);line-height:1.75}
+.day .out{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--navy2);font-weight:600}
+
+/* risk */
+.risks{display:grid;gap:12px}
+.risk{display:flex;gap:15px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.risk .n{flex:0 0 30px;height:30px;border-radius:9px;background:var(--navy);color:var(--gold);
+  display:grid;place-items:center;font-size:13.5px;font-weight:700}
+.risk h4{font-size:15px;font-weight:700;margin-bottom:5px;letter-spacing:-.3px}
+.risk p{font-size:13.8px;color:var(--ink2);line-height:1.75}
+
+/* instructor */
+.ins{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.insname{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.insname strong{font-size:19px;letter-spacing:-.5px}
+.insname span{font-size:13px;color:var(--ink3)}
+.inslead{font-size:14.5px;color:var(--ink2);margin:10px 0 18px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.inslead b{color:var(--navy)}
+.cv{display:grid;grid-template-columns:1fr 1fr;gap:9px 24px;list-style:none}
+.cv li{font-size:13.8px;color:var(--ink2);padding-left:15px;position:relative;line-height:1.7}
+.cv li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.cv li b{color:var(--navy);font-weight:600}
+
+/* close */
+.close{margin-top:44px;background:linear-gradient(165deg,var(--navy),var(--navy3));color:#fff;border-radius:18px;padding:34px 30px}
+.close h2{color:#fff;font-size:22px;margin-bottom:12px}
+.close p{font-size:14.8px;color:#C7D2E6;line-height:1.85;max-width:640px;font-weight:300}
+.close p b{color:var(--gold);font-weight:600}
+.contact{margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
+  display:flex;gap:28px;flex-wrap:wrap;font-size:14px}
+.contact div span{display:block;font-size:11px;letter-spacing:1px;color:#8FA0C0;margin-bottom:3px}
+.contact a{color:#fff;text-decoration:none;font-weight:600}
+
+footer{padding:26px 0 40px;font-size:12px;color:var(--ink3);line-height:1.8}
+footer b{color:var(--ink2)}
+
+@media (max-width:760px){
+  h1{font-size:23px}
+  .grid2,.days,.cv{grid-template-columns:1fr}
+  .dt th{width:84px;padding:13px 12px;font-size:12px}
+  .dt td{padding:13px 12px;font-size:14px}
+  .logos img.wm{height:32px}
+  .tag{display:none}
+  .btn{flex:1;justify-content:center}
+  .close{padding:26px 20px;border-radius:14px}
+}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap topin">
+  <div class="logos">
+    <img class="wm" src="assets/nobiliaire-wordmark.svg" alt="NOBILIAIRE">
+    <div class="sep"></div>
+    <div class="fsg"><img src="assets/feelsogood-mark.svg" alt=""><span>좋은기분 Feelsogood</span></div>
+  </div>
+  <div class="tag">임원진 검토용</div>
+</div></div>
+
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">NOBILIAIRE × 좋은기분</div>
+  <h1>3일 뒤, 임원 여섯 분이<br><em>각자 자기 업무 도구 한 개씩</em>을 들고 나갑니다.</h1>
+  <p class="lead">교육이 아니라 <b>산출물</b>입니다. 수료증이 아니라, 월요일 아침부터 실제로 쓰는 화면이 남습니다.
+  아래 화면은 제안서에 글로 적었던 내용을 <b>먼저 만들어 본 것</b>입니다. 제작에 2시간 걸렸습니다.</p>
+  <div class="ctas">
+    <a class="btn btn-p" href="demo/">완성된 화면 보기 →</a>
+    <a class="btn btn-s" href="approval/">품의용 1장 (A4)</a>
+  </div>
+</div></div>
+
+<main class="wrap">
+
+<section>
+  <div class="shd"><div class="snum">01</div><h2>결정에 필요한 네 줄</h2></div>
+  <p class="sdesc">커리큘럼을 읽지 않으셔도 됩니다. 판단에 필요한 것은 이것뿐입니다.</p>
+  <table class="dt">
+    <tr><th>무엇을</th><td>임원 여섯 분이 <b>각자 반복하는 업무 1건</b>을 워크숍 안에서 직접 도구로 만듭니다.
+      결재문서 요약, 주간보고 자동 생성, 매출 대시보드 — 본인이 고른 1건입니다.</td></tr>
+    <tr><th>어떻게</th><td>3일 집합. 강의 30%, 임원이 직접 손을 움직이는 시간 70%.
+      코딩 경험은 필요하지 않습니다. 말로 지시해서 만드는 방식입니다.</td></tr>
+    <tr><th>얼마</th><td><b>총 600만원.</b> <span class="hl">1일차 100만원만 먼저 집행하고 판단하실 수 있습니다.</span>
+      1일차 결과가 기대에 못 미치면 거기서 종료하십시오. 잔여 500만원은 집행하지 않습니다.</td></tr>
+    <tr><th>남는 것</th><td>작동하는 도구 <b>6개</b>와 소스 전부. 저작·사용 권리는 전부 귀사에 있습니다.
+      구독료·라이선스 추가 비용은 없습니다.</td></tr>
+  </table>
+</section>
+
+<section>
+  <div class="shd"><div class="snum">02</div><h2>이미 하나는 만들어져 있습니다</h2></div>
+  <p class="sdesc">제안서 B블록에 적은 "임원이 직접 업무 도구를 만든다"는 문장을 글로 두지 않고 화면으로 만들었습니다.
+  휴대폰에서도 열립니다.</p>
+  <div class="grid2">
+    <a class="dcard" href="demo/">
+      <div class="k">DEMO 01</div>
+      <h3>임원 주간 대시보드</h3>
+      <p>핵심 지표 4종, 월별 매출 추이, 부서별 달성률. 수치에 마우스를 올리면 전년 대비 증감이 바로 뜹니다.</p>
+      <div class="go">열어보기 →</div>
+    </a>
+    <a class="dcard" href="demo/#brief">
+      <div class="k">DEMO 02</div>
+      <h3>주간 경영 브리핑 — 결재 양식</h3>
+      <p>5개 부서 보고서 원문 1,420자를 버튼 한 번에 임원 브리핑으로. 그대로 인쇄하면 결재가 돌아가는 A4 한 장이 됩니다.</p>
+      <div class="go">열어보기 →</div>
+    </a>
+  </div>
+  <div class="punch">
+    요약만 해 주는 도구는 이미 많습니다. 이 화면이 다른 지점은 마지막 항목입니다 —
+    <b>"상품기획 지연과 디자인 지연은 같은 외주 업체 한 곳에서 비롯됨."</b>
+    다섯 개 부서가 따로 올린 보고서를 가로질러, <b>사람이 놓치는 연결</b>을 집어내는 장면입니다.
+    임원 여섯 분이 3일 동안 만드는 것이 이 수준의 도구입니다.
+  </div>
+  <p class="note">※ 화면의 모든 수치는 가상 데이터입니다. 귀사의 실제 경영 정보는 일절 사용하지 않았습니다.</p>
+</section>
+
+<section>
+  <div class="shd"><div class="snum">03</div><h2>3일 설계</h2></div>
+  <p class="sdesc">각 일차의 끝에 눈으로 확인할 수 있는 결과물을 놓았습니다. 진도가 아니라 산출물로 끊습니다.</p>
+  <div class="days">
+    <div class="day">
+      <div class="d">DAY 1</div>
+      <h4>그 자리에서 첫 화면이 돕니다</h4>
+      <p>임원별로 가장 시간이 많이 드는 업무 1건을 고릅니다. 환경 세팅부터 첫 화면 작동까지 당일에 끝냅니다.</p>
+      <div class="out">산출물 — 임원별 작동 프로토타입 6개</div>
+    </div>
+    <div class="day">
+      <div class="d">DAY 2</div>
+      <h4>실제 업무 양식에 맞춥니다</h4>
+      <p>데이터 연결, 자동 요약, 보고서 출력. 귀사가 지금 쓰는 보고 포맷 그대로 나오게 맞춥니다.</p>
+      <div class="out">산출물 — 실무 투입 가능한 도구 6개</div>
+    </div>
+    <div class="day">
+      <div class="d">DAY 3</div>
+      <h4>저 없이 고칠 수 있게 끝냅니다</h4>
+      <p>공유·배포와 수정 방법. 다음 달 양식이 바뀌어도 임원이 직접 손봅니다. 외부 의존을 남기지 않습니다.</p>
+      <div class="out">산출물 — 배포 완료 + 유지 방법 인수</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shd"><div class="snum">04</div><h2>검토가 길어지는 이유 세 가지를 먼저 없앴습니다</h2></div>
+  <p class="sdesc">보류는 설명이 부족해서가 아니라 확신이 서지 않아서 생깁니다. 확신을 막는 지점을 직접 제거했습니다.</p>
+  <div class="risks">
+    <div class="risk"><div class="n">1</div><div>
+      <h4>"600만원을 한 번에 결정해야 한다"</h4>
+      <p>1일차 100만원 선집행 구조입니다. 내부 품의 금액이 100만원으로 내려가고, 판단은 결과를 보고 하십니다.
+      총액은 그대로이고 할인은 없습니다 — 금액이 아니라 순서를 바꾼 것입니다.</p>
+    </div></div>
+    <div class="risk"><div class="n">2</div><div>
+      <h4>"사내 데이터를 외부에 줘야 하는가"</h4>
+      <p>반출하지 않습니다. 실습은 샘플·가상 데이터로 진행하고, 실제 데이터를 쓰는 단계는 귀사 PC 안에서만 다룹니다.
+      위 데모의 수치가 전부 가상인 것도 같은 원칙입니다.</p>
+    </div></div>
+    <div class="risk"><div class="n">3</div><div>
+      <h4>"끝나고 나면 아무것도 안 남는다"</h4>
+      <p>3일 교육의 흔한 결말입니다. 그래서 각 일차를 산출물로 끊었습니다.
+      만들어진 도구·소스·교안은 전부 귀사 소유이며, 유지 방법까지 3일차에 넘겨 드립니다.</p>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <div class="shd"><div class="snum">05</div><h2>누가 진행하는가</h2></div>
+  <div class="ins">
+    <div class="insname"><strong>임채훈</strong><span>좋은기분(Feelsogood^^) 대표 · 예비역 소령 · 행정사</span></div>
+    <p class="inslead">강의만 하는 강사가 아니라, <b>발주받아 실제로 만드는 개발자</b>입니다.
+    위 데모 화면도 제가 직접 만들었습니다. 임원 교육에서 이 차이가 3일차에 드러납니다.</p>
+    <ul class="cv">
+      <li><b>한화투자증권 AI VIBE 코딩 캠프</b> 주강사·평가위원 (2026 상반기, 약 29팀)</li>
+      <li><b>대한상공회의소 AWS 자격증 160시간 과정</b> 주강사 — 수강생 11명 전원 합격</li>
+      <li>교보문고 AI 교재 출간 (POD 바로출판)</li>
+      <li>고용노동부·해양경찰청·한국환경공단·도로교통공사 AI 교육</li>
+      <li>대학 AI 교육 다수 — 동아대·강릉영동대·경기과학기술대·나사렛대 외</li>
+      <li>기업 AX(AI Transformation) 컨설팅 수행</li>
+      <li>앱·웹 서비스 수주 개발 및 KOTRA 바이코리아 수출 등록</li>
+      <li>한미연합연습 참가 — 정보·작전·교육 장교 11년</li>
+    </ul>
+  </div>
+</section>
+
+<div class="close">
+  <h2>결정은 한 줄이면 됩니다</h2>
+  <p>1일차 날짜만 정해 주시면 됩니다. 나머지는 제가 맞춥니다.
+  임원 여섯 분의 일정이 모이는 날이 가장 어려운 변수라는 것을 알고 있어서,
+  <b>후보일 두 개를 홀드해 두겠습니다.</b> 회신 주시는 날짜로 확정하겠습니다.</p>
+  <div class="contact">
+    <div><span>담당</span>임채훈 · 좋은기분 대표</div>
+    <div><span>TEL</span><a href="tel:01057966434">010-5796-6434</a></div>
+    <div><span>MAIL</span><a href="mailto:imchaehun7@gmail.com">imchaehun7@gmail.com</a></div>
+  </div>
+</div>
+
+<footer>
+  <b>좋은기분(Feelsogood^^)</b> · 사업자등록번호 258-51-00692 · 충북 청주시 흥덕구 오송읍 연제길 3-18, 302호<br>
+  본 자료는 NOBILIAIRE 내부 검토용으로 제작되었습니다. 화면에 표시된 모든 경영 수치는 가상 데이터입니다.
+</footer>
+
+</main>
+</body>
+</html>
