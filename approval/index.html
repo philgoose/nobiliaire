@@ -27,42 +27,42 @@ body{background:#EDEFF3;font-family:'Noto Sans KR',sans-serif;color:var(--ink);l
   box-shadow:0 6px 30px rgba(20,38,74,.16)}
 .ph{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
   border-bottom:2.5px solid var(--navy);padding-bottom:9px;margin-bottom:4px}
-.ph h1{font-size:19.5px;font-weight:700;letter-spacing:-.7px;line-height:1.35}
+.ph h1{font-size:18px;font-weight:700;letter-spacing:-.7px;line-height:1.35}
 .ph .meta{text-align:right;font-size:10.5px;color:var(--ink3);line-height:1.6;white-space:nowrap}
 .ph .meta b{display:block;color:var(--navy);font-size:11.5px}
 .sub{font-size:11px;color:var(--ink3);margin-bottom:13px}
 
-table{width:100%;border-collapse:collapse;margin-bottom:11px}
-th,td{border:1px solid var(--line);padding:7px 10px;font-size:11.6px;vertical-align:top;line-height:1.62}
+table{width:100%;border-collapse:collapse;margin-bottom:8px}
+th,td{border:1px solid var(--line);padding:5px 9px;font-size:10.9px;vertical-align:top;line-height:1.62}
 th{background:#F3F5F8;font-weight:700;width:76px;color:var(--ink2);text-align:left;white-space:nowrap}
 td b{color:var(--navy)}
 .hl{background:linear-gradient(transparent 60%,rgba(243,185,77,.5) 60%);font-weight:700}
 
-h2{font-size:12.5px;font-weight:700;margin:14px 0 7px;padding-left:8px;border-left:3px solid var(--gold);letter-spacing:-.3px}
+h2{font-size:11.8px;font-weight:700;margin:10px 0 5px;padding-left:8px;border-left:3px solid var(--gold);letter-spacing:-.3px}
 ul{list-style:none}
-li{font-size:11.6px;color:var(--ink2);padding-left:12px;position:relative;margin-bottom:4px;line-height:1.62}
+li{font-size:10.9px;color:var(--ink2);padding-left:11px;position:relative;margin-bottom:2.5px;line-height:1.58}
 li::before{content:"";position:absolute;left:0;top:7.5px;width:4px;height:4px;border-radius:50%;background:var(--gold2)}
 li b{color:var(--navy)}
 
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-.box{border:1px solid var(--line);border-radius:5px;padding:9px 11px}
+.box{border:1px solid var(--line);border-radius:5px;padding:8px 10px;font-size:10.6px;line-height:1.6}
 .box .bt{font-size:10.5px;font-weight:700;color:var(--gold2);letter-spacing:.4px;margin-bottom:5px}
 
-.money td{font-size:11.6px}
+.money td{font-size:10.9px}
 .money .tot{background:#FBFCFE;font-weight:700}
 .money .tot td{color:var(--navy)}
 
-.dec{margin-top:12px;border:1.5px solid var(--navy);border-radius:5px;padding:10px 12px}
+.dec{margin-top:9px;border:1.5px solid var(--navy);border-radius:5px;padding:8px 12px}
 .dec .dt{font-size:11.5px;font-weight:700;margin-bottom:7px}
 .dec .opts{display:flex;gap:16px;font-size:11.5px;flex-wrap:wrap}
 .dec .opts label{display:inline-flex;align-items:center;gap:6px;color:var(--ink2)}
 .chk{width:12px;height:12px;border:1.3px solid var(--ink3);display:inline-block;border-radius:2px}
 
-.sign{margin-top:14px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
-.sign div{padding:7px 8px 26px;font-size:10px;color:var(--ink3);text-align:center;border-right:1px solid var(--line)}
+.sign{margin-top:10px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.sign div{padding:6px 8px 20px;font-size:10px;color:var(--ink3);text-align:center;border-right:1px solid var(--line)}
 .sign div:last-child{border-right:0}
 
-.foot{margin-top:13px;padding-top:8px;border-top:1px solid #E2E5EC;font-size:9.8px;color:var(--ink3);line-height:1.65;
+.foot{margin-top:10px;padding-top:7px;border-top:1px solid #E2E5EC;font-size:9.8px;color:var(--ink3);line-height:1.65;
   display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .foot b{color:var(--ink2)}
 
@@ -72,7 +72,7 @@ li b{color:var(--navy)}
   .page{width:auto;min-height:auto;margin:0;padding:0;box-shadow:none}
   @page{size:A4;margin:14mm 15mm}
 }
-@media (max-width:860px){
+@media screen and (max-width:860px){
   .page{width:auto;min-height:auto;margin:12px;padding:20px 16px}
   .cols,.sign{grid-template-columns:1fr}
   .sign div{border-right:0;border-bottom:1px solid var(--line)}
@@ -96,6 +96,7 @@ li b{color:var(--navy)}
 
   <div class="ph">
     <div>
+      <img src="../assets/nobiliaire-wordmark-navy.svg" alt="NOBILIAIRE" style="height:30px;width:auto;display:block;margin:0 0 7px -2px">
       <h1>임원 AI 활용 워크숍 도입 검토</h1>
       <div class="sub">임원 각자의 반복 업무 1건을 워크숍 중 자동화 도구로 제작 · 3일 집합</div>
     </div>
@@ -114,7 +115,7 @@ li b{color:var(--navy)}
   <h2>집행 방식 — 1일차 선집행 후 판단</h2>
   <table class="money">
     <tr><th style="width:120px">구분</th><th style="width:90px;background:#F3F5F8">금액</th><th style="background:#F3F5F8">집행 시점 및 조건</th></tr>
-    <tr><td><b>1일차 (선집행)</b></td><td class="hl">1,000,000원</td>
+    <tr><td><b>1일차 (선집행)</b></td><td><span class="hl">1,000,000원</span></td>
       <td>착수 시 집행. 종료 시점에 임원별 작동 프로토타입 6개를 눈으로 확인하고 계속 여부를 판단</td></tr>
     <tr><td>2~3일차 (잔여)</td><td>5,000,000원</td>
       <td>1일차 결과 승인 시에만 집행. <b>미승인 시 집행하지 않으며 추가 청구 없음</b></td></tr>
